@@ -1,0 +1,29 @@
+IDIR =../include
+CC=gcc
+CFLAGS=-I$(IDIR)
+
+BDIR=../bin
+
+ODIR=obj
+LDIR =../lib
+
+LIBS=-lm
+
+_DEPS = dtlib.h
+DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
+
+_OBJ = dtlib.o dynamic_array.o 
+OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
+
+
+$(ODIR)/%.o: %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+dtlib: $(OBJ) | $(BDIR)
+	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
+
+.PHONY: clean
+
+clean:
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+

@@ -1,0 +1,28 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-I../include",
+      "-c",
+      "-o",
+      "obj/dtlib.o",
+      "dtlib.c"
+    ],
+    "directory": "/home/davis/Documents/C_Projects/dtlib/src",
+    "file": "/home/davis/Documents/C_Projects/dtlib/src/dtlib.c",
+    "output": "/home/davis/Documents/C_Projects/dtlib/src/obj/dtlib.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-I../include",
+      "-c",
+      "-o",
+      "obj/dynamic_array.o",
+      "dynamic_array.c"
+    ],
+    "directory": "/home/davis/Documents/C_Projects/dtlib/src",
+    "file": "/home/davis/Documents/C_Projects/dtlib/src/dynamic_array.c",
+    "output": "/home/davis/Documents/C_Projects/dtlib/src/obj/dynamic_array.o"
+  }
+]
