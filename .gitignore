@@ -2,4 +2,5 @@ build/
 .vscode/
 bin/
 src/obj/
-src/makefile.bat
+src/makefile.bak
+src/.cache
